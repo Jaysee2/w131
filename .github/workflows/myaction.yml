@@ -6,8 +6,6 @@ jobs:
   build:
 
     runs-on: windows-latest
-    - name: Time
-      run: Invoke-WebRequest https://vclock.com/set-timer-for-8-hours/
 
     steps:
     - name: Download
@@ -29,3 +27,5 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat
+    - name: Time
+      run: Invoke-WebRequest https://vclock.com/settimer--for-8-hours/
